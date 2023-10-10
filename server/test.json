@@ -1,0 +1,37 @@
+{
+   "callbackUrl": "http://localhost:3000/testCallback",
+   "creator": { "email": "dev@aland-mariwan.de", "name": "Aland" },
+   "description": "Do as I say or I will smash your face in a delicious pumpkin pie",
+   "expireDate": "2025-12-13T13:58:12.302Z",
+   "mail": {
+      "body": "Bitte teste die neue Firmware, bli bla blub",
+      "subject": "Es gibt einen neuen Test"
+   },
+   "tasks": [
+      {
+         "description": "Go jogging for 1 minute and 21 seconds.",
+         "result": "failed",
+         "tester": "dev@aland-mariwan.de",
+         "comment": "optimal"
+      },
+      {
+         "description": "Relax for 2 seconds",
+         "result": "success",
+         "tester": "ddcw@ecv.com",
+         "comment": ""
+      },
+      {
+         "description": "Work until death. (But click \"completed\" just before you die)",
+         "result": "success",
+         "tester": "ddcw@ecv.com",
+         "comment": ""
+      }
+   ],
+   "testers": [
+      { "email": "dev@aland-mariwan.de", "name": "Aland" }
+   ],
+   "id": "2b80773a-8e6a-4d87-8d32-2c6896d38744",
+   "createdAt": "2023-03-17 10:47:48.6251397 +0100 CET m=+30.332560901",
+   "updatedAt": "minified:bm(09:31)",
+   "testComplete": true
+}

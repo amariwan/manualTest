@@ -1,0 +1,174 @@
+classDiagram
+class Tester
+Tester : +email String
+Tester : +name String
+Tester : +toJson() Map<String, dynamic>
+
+class Signature
+Signature : +index int
+Signature : +createdAt String
+Signature : +toJson() Map<String, dynamic>
+
+class Mail
+Mail : +body String
+Mail : +subject String
+Mail : +toJson() Map<String, dynamic>
+
+class Tasks
+Tasks : +description String
+Tasks : +tester String
+Tasks : +result String?
+Tasks : +comment String?
+Tasks : +toJson() Map<String, dynamic>
+
+class Order
+Order : +event String
+Order : +callbackUrl String
+Order : +creator Tester
+Order o-- Tester
+Order : +description String
+Order : +expireDate String
+Order : +mail Mail
+Order o-- Mail
+Order : +tasks List~Tasks~
+Order : +testers List~Tester~
+Order : +testComplete bool
+Order : +id String
+Order : +createdAt String
+Order : +updatedAt String
+Order : +stump Signature
+Order o-- Signature
+Order : +toJson() Map<String, dynamic>
+
+class Orders
+Orders : +orders List~Order~
+Orders : +event String
+Orders : +stump Signature
+Orders o-- Signature
+Orders : +toJson() Map<String, dynamic>
+
+class SigIn
+SigIn : +loginController TextEditingController
+SigIn o-- TextEditingController
+SigIn : +createState() _SigInState
+StatefulWidget <|-- SigIn
+
+class _SigInState
+_SigInState : +build() Widget
+State <|-- _SigInState
+
+class ManualTest
+ManualTest : +createState() State<ManualTest>
+StatefulWidget <|-- ManualTest
+
+class _ManualTestState
+_ManualTestState : +initState() void
+_ManualTestState : +dispose() void
+_ManualTestState : +build() Widget
+State <|-- _ManualTestState
+
+class OrderPage
+OrderPage : +title String
+OrderPage : +tester String
+OrderPage : +orderId String
+OrderPage : +buildFirstTime bool
+OrderPage : +orderModels List~OrderModel~
+OrderPage : +createState() _OrderPageState
+StatefulWidget <|-- OrderPage
+
+class _OrderPageState
+_OrderPageState : +build() Widget
+_OrderPageState : +getWidgetsFromWebsocketOrder() Widget
+_OrderPageState : -_convertInfoFromWebSocketOrder() List<Order>
+State <|-- _OrderPageState
+
+class OrdersPages
+OrdersPages : +title String
+OrdersPages : +tester String
+OrdersPages : +createState() _OrdersPagesState
+StatefulWidget <|-- OrdersPages
+
+class _OrdersPagesState
+_OrdersPagesState : +initState() void
+_OrdersPagesState : +build() Widget
+_OrdersPagesState : +getWidgetsFromWebsocket() Widget
+_OrdersPagesState : -_convertInfoFromWebSocket() List<Order>
+State <|-- _OrdersPagesState
+
+class FTableRowOrdersModel
+FTableRowOrdersModel : +tester String
+FTableRowOrdersModel : +headers()$ List<String>
+FTableRowOrdersModel : +build() List<Widget>
+FTableRowOrdersModel : +updateValue() void
+FTableRowOrdersModel : +hasSameValue() bool
+FTableRowOrdersModel : +clone() FTableRow<OrdersModel>
+FTableRow <|-- FTableRowOrdersModel
+
+class OrdersModel
+OrdersModel : +name String
+OrdersModel : +description String
+OrdersModel : +createdAt String
+OrdersModel : +expireDate String
+OrdersModel : +id String
+OrdersModel : +testComplete bool
+OrdersModel : +hashCode int
+OrdersModel : +clone() OrdersModel
+OrdersModel : +==() bool
+FCloneable <|.. OrdersModel
+
+class FTableRowOrderModel
+FTableRowOrderModel : +onChange void Function?
+FTableRowOrderModel o-- void Function
+FTableRowOrderModel : +task Tasks
+FTableRowOrderModel o-- Tasks
+FTableRowOrderModel : +id String
+FTableRowOrderModel : +tester String
+FTableRowOrderModel : +isTacked bool
+FTableRowOrderModel : +headers()$ List<String>
+FTableRowOrderModel : +build() List<Widget>
+FTableRowOrderModel : +updateValue() void
+FTableRowOrderModel : +hasSameValue() bool
+FTableRowOrderModel : +clone() FTableRow<OrderModel>
+FTableRow <|-- FTableRowOrderModel
+
+class OrderModel
+OrderModel : +focusNode FocusNode
+OrderModel o-- FocusNode
+OrderModel : +task Tasks
+OrderModel o-- Tasks
+OrderModel : +testerController FTextEditingController
+OrderModel o-- FTextEditingController
+OrderModel : +descriptionController FTextEditingController
+OrderModel o-- FTextEditingController
+OrderModel : +status bool?
+OrderModel : +commitController FTextEditingController
+OrderModel o-- FTextEditingController
+OrderModel : +tester String
+OrderModel : +description String
+OrderModel : +commit String
+OrderModel : +statusValue bool?
+OrderModel : +hashCode int
+OrderModel : +isEqual() bool
+OrderModel : +==() bool
+OrderModel : +clone() OrderModel
+FCloneable <|-- OrderModel
+
+class WebSocketController
+WebSocketController : +url String
+WebSocketController : +channel WebSocketChannel
+WebSocketController o-- WebSocketChannel
+WebSocketController : -_streamController StreamController~dynamic~
+WebSocketController o-- StreamController~dynamic~
+WebSocketController : -_subscription StreamSubscription~dynamic~
+WebSocketController o-- StreamSubscription~dynamic~
+WebSocketController : +stream Stream~dynamic~
+WebSocketController o-- Stream~dynamic~
+WebSocketController : +sendMessage() void
+WebSocketController : +dispose() void
+WebSocketController : +sendEmail() void
+WebSocketController : +getValues() void
+WebSocketController : +deleteValues() void
+
+class Index
+Index : +index int
+Index : +increment() void

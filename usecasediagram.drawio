@@ -1,0 +1,252 @@
+<mxfile host="65bd71144e">
+    <diagram id="AXKmUM6vIeiqqMgsR50C" name="Page-1">
+        <mxGraphModel dx="1277" dy="1323" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-20" y="-10" width="640" height="770" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Test-Sytem-Frontend" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=30;boundedLbl=1;verticalAlign=middle;align=center;spacingLeft=5;" parent="1" vertex="1">
+                    <mxGeometry x="120" width="490" height="740" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Tester" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-10" y="370" width="60" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="shape=ellipse;container=1;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;html=1;dashed=0;collapsible=0;" parent="1" vertex="1">
+                    <mxGeometry x="370.5" y="440" width="190" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Anmelden" style="html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rotatable=0;" parent="5" vertex="1">
+                    <mxGeometry x="0.95" y="6.0636363636363635" width="180" height="27.272727272727273" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="line;strokeWidth=1;fillColor=none;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;dashed=0;resizeWidth=1;" parent="5" vertex="1">
+                    <mxGeometry x="9.047619047619047" y="25" width="162.85714285714283" height="8.333333333333334" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="extension points" style="text;html=1;align=center;verticalAlign=middle;rotatable=0;fillColor=none;strokeColor=none;" parent="5" vertex="1">
+                    <mxGeometry x="-35.5" y="27.272727272727273" width="180.95" height="18.18181818181818" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="ok:=E-Mail ist gültig" style="text;html=1;align=center;verticalAlign=middle;rotatable=0;spacingLeft=25;fillColor=none;strokeColor=none;fontSize=10;" parent="5" vertex="1">
+                    <mxGeometry y="45.45454545454545" width="180.95" height="9.09090909090909" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;istDa:=wurde E-Mail geschrieben&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;rotatable=0;spacingLeft=25;fillColor=none;strokeColor=none;" parent="5" vertex="1">
+                    <mxGeometry y="54.55" width="180.95" height="25.45" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;logIn:=Login gedruckt&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;rotatable=0;spacingLeft=25;fillColor=none;strokeColor=none;" parent="5" vertex="1">
+                    <mxGeometry y="80" width="180.95" height="9.09" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;fontSize=7;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" target="10" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="60" y="500" as="sourcePoint"/>
+                        <mxPoint x="220" y="424.71" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="" style="shape=ellipse;container=1;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;html=1;dashed=0;collapsible=0;fontSize=8;" parent="1" vertex="1">
+                    <mxGeometry x="129.49" y="580" width="160.51" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Lösche abgeschlossene&lt;br&gt;&amp;nbsp;Testhost&lt;/font&gt;" style="html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rotatable=0;fontSize=8;" parent="26" vertex="1">
+                    <mxGeometry x="-3.647954545454544" y="21.53" width="160.51" height="6.940000000000001" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;&amp;lt;&amp;lt;include&amp;gt;&amp;gt;&lt;/font&gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;fontSize=7;" parent="1" edge="1">
+                    <mxGeometry x="-0.6715" y="-7" width="160" relative="1" as="geometry">
+                        <mxPoint x="290" y="600" as="sourcePoint"/>
+                        <mxPoint x="480" y="540" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="55" value="" style="shape=ellipse;container=1;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;html=1;dashed=0;collapsible=0;fontSize=7;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="340" width="300" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Test&amp;nbsp; bearbeiten&lt;/font&gt;" style="html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rotatable=0;fontSize=7;" parent="55" vertex="1">
+                    <mxGeometry x="17.132917439434905" y="14.129999999999999" width="228.32473682405336" height="22.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" value="" style="line;strokeWidth=1;fillColor=none;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;dashed=0;resizeWidth=1;fontSize=7;" parent="55" vertex="1">
+                    <mxGeometry x="7.03" y="28.38" width="282.97" height="9.87" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;extension points&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;rotatable=0;fillColor=none;strokeColor=none;fontSize=7;" parent="55" vertex="1">
+                    <mxGeometry x="20" y="38.25" width="188.04" height="13.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;testGenommen&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;rotatable=0;spacingLeft=25;fillColor=none;strokeColor=none;fontSize=7;" parent="55" vertex="1">
+                    <mxGeometry x="70" y="51.75" width="201.19" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="149" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;alleTestsBewertet&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;rotatable=0;spacingLeft=25;fillColor=none;strokeColor=none;" parent="55" vertex="1">
+                    <mxGeometry x="-60" y="60" width="360" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="" style="shape=ellipse;container=1;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;html=1;dashed=0;collapsible=0;fontSize=7;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="30" width="300" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Test nehmen&lt;/font&gt;" style="html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rotatable=0;fontSize=7;" parent="60" vertex="1">
+                    <mxGeometry y="22.5" width="300" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="" style="shape=ellipse;container=1;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;html=1;dashed=0;collapsible=0;fontSize=7;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="129" width="137" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Test bewerten&lt;/font&gt;" style="html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rotatable=0;fontSize=7;" parent="70" vertex="1">
+                    <mxGeometry width="137" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="" style="line;strokeWidth=1;fillColor=none;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;dashed=0;resizeWidth=1;fontSize=7;" parent="70" vertex="1">
+                    <mxGeometry x="6.85" y="20" width="123.3" height="6.666666666666666" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;extension points&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;rotatable=0;fillColor=none;strokeColor=none;fontSize=7;" parent="70" vertex="1">
+                    <mxGeometry x="-10" y="26.67" width="147" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;testGenommen&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;rotatable=0;spacingLeft=25;fillColor=none;strokeColor=none;fontSize=7;" parent="70" vertex="1">
+                    <mxGeometry x="20" y="46.67" width="117" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="" style="shape=ellipse;container=1;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;html=1;dashed=0;collapsible=0;fontSize=7;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="140" width="132.65" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Test kommentieren&lt;/font&gt;" style="html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rotatable=0;fontSize=7;" parent="75" vertex="1">
+                    <mxGeometry x="8.670204081632653" y="9.517435738032114" width="121.33333333333333" height="17.498809604788793" as="geometry"/>
+                </mxCell>
+                <mxCell id="115" value="" style="line;strokeWidth=1;fillColor=none;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;dashed=0;resizeWidth=1;fontSize=7;" parent="75" vertex="1">
+                    <mxGeometry y="27.012448132780086" width="127.34693877551018" height="8.328004897626013" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;extension points&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;rotatable=0;fillColor=none;strokeColor=none;fontSize=7;" parent="75" vertex="1">
+                    <mxGeometry x="-5.3061224489795915" y="27.01720971362491" width="132.6530612244898" height="24.99829943541256" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;testGenommen&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;rotatable=0;spacingLeft=25;fillColor=none;strokeColor=none;fontSize=7;" parent="75" vertex="1">
+                    <mxGeometry x="10" y="45" width="122.65" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;fontSize=7;" parent="1" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="60" y="603" as="sourcePoint"/>
+                        <mxPoint x="130" y="603" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="85" value="" style="shape=ellipse;container=1;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;html=1;dashed=0;collapsible=0;fontSize=7;" parent="1" vertex="1">
+                    <mxGeometry x="496" y="260" width="104" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Test&amp;nbsp; zurücksetzen&lt;/font&gt;" style="html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rotatable=0;fontSize=7;" parent="85" vertex="1">
+                    <mxGeometry y="18.75" width="104" height="12.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="" style="shape=ellipse;container=1;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;html=1;dashed=0;collapsible=0;fontSize=7;" parent="1" vertex="1">
+                    <mxGeometry x="129.49" y="642.78" width="160.51" height="47.22" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" value="Abgeschlossener Testhost&amp;nbsp; ansehen" style="html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rotatable=0;fontSize=9;" parent="92" vertex="1">
+                    <mxGeometry x="-2.4374184714961413" y="17.7075" width="148.94891129366857" height="11.805" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;&amp;lt;&amp;lt;include&amp;gt;&amp;gt;&lt;/font&gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;fontSize=7;exitX=0.966;exitY=0.284;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="92" edge="1">
+                    <mxGeometry x="0.1164" y="-2" width="160" relative="1" as="geometry">
+                        <mxPoint x="280" y="660" as="sourcePoint"/>
+                        <mxPoint x="490" y="540" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="104" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;&lt;br&gt;auf zurücksetzen gedruckt und&lt;br&gt;testGenommen und&lt;br&gt;Tester != Test.Tester&amp;nbsp;&lt;/font&gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;fontSize=7;exitX=0.24;exitY=0.922;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.387;entryY=0.04;entryDx=0;entryDy=0;align=center;entryPerimeter=0;" parent="1" source="85" target="55" edge="1">
+                    <mxGeometry x="-0.307" y="25" width="160" relative="1" as="geometry">
+                        <mxPoint x="340" y="310" as="sourcePoint"/>
+                        <mxPoint x="500" y="310" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="106" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;&lt;br&gt;In Kommentarfeld schreiben und&amp;nbsp;&lt;br&gt;(Tester == Test.Tester oder&lt;br&gt;testGenommen == False)&lt;/font&gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;fontSize=7;entryX=0.35;entryY=0.07;entryDx=0;entryDy=0;entryPerimeter=0;align=center;" parent="1" target="55" edge="1">
+                    <mxGeometry x="0.0272" y="-1" width="160" relative="1" as="geometry">
+                        <mxPoint x="320" y="210" as="sourcePoint"/>
+                        <mxPoint x="310" y="290" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="107" value="" style="shape=ellipse;container=1;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;html=1;dashed=0;collapsible=0;fontSize=7;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="420" width="120" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Offene Testhost öffnen&lt;/font&gt;" style="html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rotatable=0;fontSize=7;" parent="107" vertex="1">
+                    <mxGeometry x="30.68100406787787" y="12.891666666666667" width="58.647589235986274" height="17.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="132" value="" style="line;strokeWidth=1;fillColor=none;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;dashed=0;resizeWidth=1;fontSize=7;" parent="107" vertex="1">
+                    <mxGeometry y="20" width="120" height="19.61" as="geometry"/>
+                </mxCell>
+                <mxCell id="133" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;extension points&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;rotatable=0;fillColor=none;strokeColor=none;fontSize=7;" parent="107" vertex="1">
+                    <mxGeometry y="30" width="98.98" height="20.11" as="geometry"/>
+                </mxCell>
+                <mxCell id="135" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;alleTestsBewertet&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;rotatable=0;spacingLeft=25;fillColor=none;strokeColor=none;" parent="107" vertex="1">
+                    <mxGeometry x="-29.257629914764916" y="50.1040909090909" width="149.25762991476492" height="10.606060606060606" as="geometry"/>
+                </mxCell>
+                <mxCell id="112" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;&amp;lt;&amp;lt;include&amp;gt;&amp;gt;&lt;/font&gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;fontSize=7;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.225;exitY=0.928;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="55" target="107" edge="1">
+                    <mxGeometry x="0.2853" y="-5" width="160" relative="1" as="geometry">
+                        <mxPoint x="290" y="410" as="sourcePoint"/>
+                        <mxPoint x="230" y="331" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="113" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;&amp;lt;&amp;lt;include&amp;gt;&amp;gt;&lt;/font&gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;fontSize=7;exitX=1.001;exitY=0.541;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="107" edge="1">
+                    <mxGeometry x="0.1429" width="160" relative="1" as="geometry">
+                        <mxPoint x="250" y="460" as="sourcePoint"/>
+                        <mxPoint x="390" y="460" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="114" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;&lt;br&gt;testGenommen == False&lt;/font&gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;fontSize=7;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="75" edge="1">
+                    <mxGeometry x="0.3185" y="1" width="160" relative="1" as="geometry">
+                        <mxPoint x="315" y="90" as="sourcePoint"/>
+                        <mxPoint x="300" y="160" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="116" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px; background-color: initial;&quot;&gt;&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;aud status drücken und&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;(Tester == Test.Tester oder&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;testGenommen == False)&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;fontSize=7;entryX=0.371;entryY=0.048;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.114;exitY=0.812;exitDx=0;exitDy=0;exitPerimeter=0;align=left;" parent="1" source="70" target="55" edge="1">
+                    <mxGeometry x="-0.1067" y="-2" width="160" relative="1" as="geometry">
+                        <mxPoint x="360" y="230" as="sourcePoint"/>
+                        <mxPoint x="520" y="230" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="117" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;&lt;br&gt;testGenommen == False&lt;/font&gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;fontSize=7;entryX=0.035;entryY=1.186;entryDx=0;entryDy=0;exitX=0.936;exitY=0.721;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="60" target="71" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="450" y="80" as="sourcePoint"/>
+                        <mxPoint x="275.32500000000005" y="201.91112999999996" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="118" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;&lt;br&gt;aud Testnemen drücken und&lt;br&gt;testGenommen == False&lt;/font&gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;fontSize=7;entryX=0.329;entryY=0.017;entryDx=0;entryDy=0;exitX=0.06;exitY=0.726;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="60" target="55" edge="1">
+                    <mxGeometry x="-0.3681" y="-29" width="160" relative="1" as="geometry">
+                        <mxPoint x="160" y="120" as="sourcePoint"/>
+                        <mxPoint x="320" y="190" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="119" value="" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;fontSize=7;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="93" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="60" y="666" as="sourcePoint"/>
+                        <mxPoint x="260" y="610" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="121" value="" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;fontSize=7;entryX=-0.001;entryY=0.172;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="133" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="60" y="454" as="sourcePoint"/>
+                        <mxPoint x="130" y="410" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="126" value="" style="shape=ellipse;container=1;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;html=1;dashed=0;collapsible=0;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="129.49" y="520" width="160.51" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="127" value="Testhosts anzeigen" style="html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rotatable=0;fontSize=9;" parent="126" vertex="1">
+                    <mxGeometry y="14.816666666666666" width="160.51" height="12.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="131" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;&lt;/span&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;ok ==true&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;und logIn == true&amp;nbsp;&lt;/span&gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;fontSize=9;align=right;entryX=0.577;entryY=1.007;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.011;exitY=0.444;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="126" target="5" edge="1">
+                    <mxGeometry x="0.4483" y="-19" width="160" relative="1" as="geometry">
+                        <mxPoint x="290" y="541" as="sourcePoint"/>
+                        <mxPoint x="460" y="540" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="141" value="" style="shape=ellipse;container=1;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;html=1;dashed=0;collapsible=0;fontSize=9;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="260" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="142" value="Sende Testprotokoll" style="html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rotatable=0;fontSize=9;" parent="141" vertex="1">
+                    <mxGeometry x="-0.51" y="18.75" width="100" height="12.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="147" value="" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;fontSize=9;entryX=0.009;entryY=0.567;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="55" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="60" y="390" as="sourcePoint"/>
+                        <mxPoint x="280" y="390" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="150" value="&lt;span style=&quot;font-size: 10px; text-align: center;&quot;&gt;&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;&lt;/span&gt;&lt;br&gt;Auf Protokoll senden drücken&amp;nbsp;&lt;br&gt;und allTestBewertet == true" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;fontSize=9;entryX=0.327;entryY=0.055;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.565;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;align=right;" parent="1" source="141" target="55" edge="1">
+                    <mxGeometry x="0.2476" y="-9" width="160" relative="1" as="geometry">
+                        <mxPoint x="150" y="360" as="sourcePoint"/>
+                        <mxPoint x="310" y="360" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

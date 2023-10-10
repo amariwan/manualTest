@@ -1,0 +1,214 @@
+@startuml
+set namespaceSeparator ::
+
+class "manualtest::json.dart::Tester" {
+  +String email
+  +String name
+  +Map<String, dynamic> toJson()
+}
+
+class "manualtest::json.dart::Signature" {
+  +int index
+  +String createdAt
+  +Map<String, dynamic> toJson()
+}
+
+class "manualtest::json.dart::Mail" {
+  +String body
+  +String subject
+  +Map<String, dynamic> toJson()
+}
+
+class "manualtest::json.dart::Tasks" {
+  +String description
+  +String tester
+  +String? result
+  +String? comment
+  +Map<String, dynamic> toJson()
+}
+
+class "manualtest::json.dart::Order" {
+  +String event
+  +String callbackUrl
+  +Tester creator
+  +String description
+  +String expireDate
+  +Mail mail
+  +List<Tasks> tasks
+  +List<Tester> testers
+  +bool testComplete
+  +String id
+  +String createdAt
+  +String updatedAt
+  +Signature stump
+  +Map<String, dynamic> toJson()
+}
+
+"manualtest::json.dart::Order" o-- "manualtest::json.dart::Tester"
+"manualtest::json.dart::Order" o-- "manualtest::json.dart::Mail"
+"manualtest::json.dart::Order" o-- "manualtest::json.dart::Signature"
+
+class "manualtest::json.dart::Orders" {
+  +List<Order> orders
+  +String event
+  +Signature stump
+  +Map<String, dynamic> toJson()
+}
+
+"manualtest::json.dart::Orders" o-- "manualtest::json.dart::Signature"
+
+class "manualtest::login.dart::SigIn" {
+  +TextEditingController loginController
+  +_SigInState createState()
+}
+
+"manualtest::login.dart::SigIn" o-- "flutter::src::widgets::editable_text.dart::TextEditingController"
+"flutter::src::widgets::framework.dart::StatefulWidget" <|-- "manualtest::login.dart::SigIn"
+
+class "manualtest::login.dart::_SigInState" {
+  +Widget build()
+}
+
+"flutter::src::widgets::framework.dart::State" <|-- "manualtest::login.dart::_SigInState"
+
+class "manualtest::main.dart::ManualTest" {
+  +State<ManualTest> createState()
+}
+
+"flutter::src::widgets::framework.dart::StatefulWidget" <|-- "manualtest::main.dart::ManualTest"
+
+class "manualtest::main.dart::_ManualTestState" {
+  +void initState()
+  +void dispose()
+  +Widget build()
+}
+
+"flutter::src::widgets::framework.dart::State" <|-- "manualtest::main.dart::_ManualTestState"
+
+class "manualtest::order.dart::OrderPage" {
+  +String title
+  +String tester
+  +String orderId
+  +FTableController<dynamic> c
+  +bool buildFirstTime
+  +List<OrderModel> orderModels
+  +_OrderPageState createState()
+}
+
+"manualtest::order.dart::OrderPage" o-- "fwidget::widgets::table.dart::FTableController<dynamic>"
+"flutter::src::widgets::framework.dart::StatefulWidget" <|-- "manualtest::order.dart::OrderPage"
+
+class "manualtest::order.dart::_OrderPageState" {
+  +Widget build()
+  +Widget getWidgetsFromWebsocketOrder()
+  -List<Order> _convertInfoFromWebSocketOrder()
+}
+
+"flutter::src::widgets::framework.dart::State" <|-- "manualtest::order.dart::_OrderPageState"
+
+class "manualtest::orders.dart::OrdersPages" {
+  +String title
+  +String tester
+  +_OrdersPagesState createState()
+}
+
+"flutter::src::widgets::framework.dart::StatefulWidget" <|-- "manualtest::orders.dart::OrdersPages"
+
+class "manualtest::orders.dart::_OrdersPagesState" {
+  +void initState()
+  +Widget build()
+  +Widget getWidgetsFromWebsocket()
+  -List<Order> _convertInfoFromWebSocket()
+}
+
+"flutter::src::widgets::framework.dart::State" <|-- "manualtest::orders.dart::_OrdersPagesState"
+
+class "manualtest::orders_model.dart::FTableRowOrdersModel" {
+  +String tester
+  {static} +List<String> headers()
+  +List<Widget> build()
+  +void updateValue()
+  +bool hasSameValue()
+  +FTableRow<OrdersModel> clone()
+}
+
+"fwidget::widgets::table.dart::FTableRow" <|-- "manualtest::orders_model.dart::FTableRowOrdersModel"
+
+class "manualtest::orders_model.dart::OrdersModel" {
+  +String name
+  +String description
+  +String createdAt
+  +String expireDate
+  +String id
+  +bool testComplete
+  +int hashCode
+  +OrdersModel clone()
+  +bool ==()
+}
+
+"fwidget::helpers::cloneable.dart::FCloneable" <|-- "manualtest::orders_model.dart::OrdersModel"
+
+class "manualtest::order_model.dart::FTableRowOrderModel" {
+  +void Function()? onChange
+  +Tasks task
+  +String id
+  +String tester
+  +bool isTacked
+  {static} +List<String> headers()
+  +List<Widget> build()
+  +void updateValue()
+  +bool hasSameValue()
+  +FTableRow<OrderModel> clone()
+}
+
+"manualtest::order_model.dart::FTableRowOrderModel" o-- "null::void Function()"
+"manualtest::order_model.dart::FTableRowOrderModel" o-- "manualtest::json.dart::Tasks"
+"fwidget::widgets::table.dart::FTableRow" <|-- "manualtest::order_model.dart::FTableRowOrderModel"
+
+class "manualtest::order_model.dart::OrderModel" {
+  +FocusNode focusNode
+  +Tasks task
+  +FTextEditingController testerController
+  +FTextEditingController descriptionController
+  +bool? status
+  +FTextEditingController commitController
+  +String tester
+  +String description
+  +String commit
+  +bool? statusValue
+  +int hashCode
+  +bool isEqual()
+  +bool ==()
+  +OrderModel clone()
+}
+
+"manualtest::order_model.dart::OrderModel" o-- "flutter::src::widgets::focus_manager.dart::FocusNode"
+"manualtest::order_model.dart::OrderModel" o-- "manualtest::json.dart::Tasks"
+"manualtest::order_model.dart::OrderModel" o-- "fwidget::controllers::text_editing_controller.dart::FTextEditingController"
+"fwidget::helpers::cloneable.dart::FCloneable" <|-- "manualtest::order_model.dart::OrderModel"
+
+class "manualtest::stream_controller.dart::WebSocketController" {
+  +String url
+  +WebSocketChannel channel
+  -StreamController<dynamic> _streamController
+  -StreamSubscription<dynamic> _subscription
+  +Stream<dynamic> stream
+  +void sendMessage()
+  +void dispose()
+  +void sendEmail()
+  +void getValues()
+  +void deleteValues()
+}
+
+"manualtest::stream_controller.dart::WebSocketController" o-- "web_socket_channel::src::channel.dart::WebSocketChannel"
+"manualtest::stream_controller.dart::WebSocketController" o-- "dart::async::StreamController<dynamic>"
+"manualtest::stream_controller.dart::WebSocketController" o-- "dart::async::StreamSubscription<dynamic>"
+"manualtest::stream_controller.dart::WebSocketController" o-- "dart::async::Stream<dynamic>"
+
+class "manualtest::stream_controller.dart::Index" {
+  +int index
+  +void increment()
+}
+
+
+@enduml
